@@ -1,0 +1,31 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --dark-color: #282c34;
+  --light-color: #eee;
+  --main-color: #61dafb;
+  --green: #47ff00;
+}
+
+::-webkit-scrollbar {
+  background-color: var(--dark-color);
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--main-color);
+}
+
+body {
+  overflow-x: hidden;
+}
+
+#root {
+  background-color: var(--dark-color);
+  width: 100vw;
+  min-height: 100vh;
+  padding: 10px;
+}

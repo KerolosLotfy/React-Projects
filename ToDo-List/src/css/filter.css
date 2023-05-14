@@ -1,0 +1,73 @@
+.filter {
+  color: var(--main-color);
+  width: 100%;
+  height: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  overflow: hidden;
+  gap: 10px;
+}
+
+.filter > p {
+  cursor: pointer;
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  margin-left: 20px;
+  border: 2px solid var(--main-color);
+  font-size: 20px;
+  color: var(--dark-color);
+  background-color: var(--main-color);
+}
+
+.filter > p > *:first-child {
+  cursor: pointer;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  color: var(--main-color);
+  background-color: transparent;
+}
+
+.filter > p:hover,
+.filter > .select > li:hover {
+  color: var(--dark-color);
+  background-color: var(--main-color);
+}
+
+.filter .select {
+  position: relative;
+  left: 0%;
+  top: -300px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: transparent;
+  z-index: 50;
+  transition: top 0.3s linear;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.filter > .select.active {
+  top: 0px;
+}
+
+.filter .select > li {
+  color: var(--main-color);
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  background-color: var(--dark-color);
+  border-radius: 10px;
+  border: 2px solid var(--main-color);
+  cursor: pointer;
+}

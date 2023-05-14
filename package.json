@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "todo:install": "cd ToDo-List && npm run install",
+    "todo:build": "cd ToDo-List && npm run build",
+    "todo:start": "cd ToDo-List && npm run start",
+    "predeploy": "cd ToDo-List && npm run build",
+    "deploy": " cd ToDo-List && gh-pages -d build"
+  }
+}
