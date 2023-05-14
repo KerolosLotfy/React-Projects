@@ -5,5 +5,8 @@
     "todo:start": "cd ToDo-List && npm run start",
     "predeploy": "cd ToDo-List && npm run build",
     "deploy": " cd ToDo-List && gh-pages -d build"
+  },
+  "dependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
